@@ -30,11 +30,11 @@ pdf:
 	-H "$(STYLEDIR)/preamble.tex" \
 	--template="$(STYLEDIR)/template.tex" \
 	--bibliography="$(BIBFILE)" 2>pandoc.log \
-	--csl="$(STYLEDIR)/ref_format.csl" \
+	--csl="$(STYLEDIR)/annals-of-the-royal-college-of-surgeons-of-england.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
-	-V documentclass=report \
+	-V documentclass=scrreprt \
 	-N \
 	--pdf-engine=xelatex \
 	--verbose
